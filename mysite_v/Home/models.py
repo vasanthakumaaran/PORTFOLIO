@@ -1,5 +1,4 @@
 from django.db import models
-from django.db import models
 # Create your models here.
 class Contacts(models.Model):
     
@@ -9,4 +8,4 @@ class Contacts(models.Model):
     desc= models.TextField()
     
     def _str_(self):
-        return self.name
+        return self.Name + " " +self.email
