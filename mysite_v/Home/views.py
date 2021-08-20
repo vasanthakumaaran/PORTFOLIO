@@ -21,7 +21,7 @@ def contact(request):
         phone = request.POST['phone']
         desc = request.POST['desc']
         print(Name,email,phone,desc)
-        ins = Contacts(Name=Name,email=email,phone=phone)
-        ins.save()
+        contact = Contacts(Name=Name,email=email,phone=phone)
+        contact.save()
         print("The data has been written to the DataBase")
     return render(request,'contact.html')
