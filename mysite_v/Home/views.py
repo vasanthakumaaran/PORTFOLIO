@@ -1,8 +1,8 @@
 from django.shortcuts import render,HttpResponse
 from Home.models import Contacts
 # Create your views here.
-def nav(request):
-    return render(request,'nav.html')
+#def nav(request):
+    #return render(request,'nav.html')
 def home(request):
     #return HttpResponse("This is my Home Page")
     context = {'name':'Harry','course':'Django'}
